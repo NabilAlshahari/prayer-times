@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    direction: rtl;
+}
+:root{
+    --first-color:#277bc0;
+    --f1-color:#3ab4f2;
+    --second-color:rgb(4, 55, 88);
+    --s2-color:rgb(3, 44, 3);
+}
+.boster{
+    padding: 20px;
+    min-height: calc(100vh-30px);
+    margin: 15px;
+    background: linear-gradient(45deg,#4e02ff,#c55210);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    height: 900px;
+    z-index: 3;
+}
+.boster::before,
+.boster::after{
+    content: "";
+    width: 500px;
+    height: 500px;
+    background-color: #550b6b;
+    opacity: 0.5;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+.boster::before{
+    top: -150px;
+    right: -100px;
+}
+.boster::after{
+    bottom: -150px;
+    left: -100px;
+}
+
+.boster .prayer{
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.boster .prayer h1{
+    font-size: 50px;
+    font-weight: bold;
+    color:#d4cff3;
+}
+.boster .city select{
+    background: none;
+    width: 160px;
+    height: 35px;
+    border-radius: 20px;
+    display: block;
+    padding: 5px 15px;
+    border: 1px solid #fff;
+    text-align: center;
+
+}
+@media(max-width:700px){
+    .boster .city{
+        display: flex;
+        justify-content: center;
+    }
+}
+.pray-time{
+    background:white;
+    width: 120px;
+    height: 150px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    border-radius: 5px;
+
+}
+.pray-time::before,
+.pray-time::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 30px;
+    background:linear-gradient(45deg,#ff67ff,#0400ff);
+    z-index: -1;
+
+}
+.all-time{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 45px;
+}
+.pray-time h2{
+    color: rgb(255, 255, 255);
+}
+.pray-time h4{
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 2px 18px ;
+
+}
+.all-time .pray-time{
+    align-items: center;
+    justify-content: center;
+    color: #3ab4f2;
+    
+}
+.all-time .pray-time h4{
+    margin-top: 10px;
+
+}
+.box{
+    text-align: center;
+}
+.city h3{
+    font-size: 30px;
+   border: 3px dashed #0ad44d;
+   width: 12%;
+   border-radius: 15px;
+   text-align: center;
+   color: rgb(157, 202, 241);
+ 
+  
+}
+.city select{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+
